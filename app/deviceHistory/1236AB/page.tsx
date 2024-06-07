@@ -32,7 +32,13 @@ export default function Device1236AB() {
         </Flex>
       </Box>
       <Box marginTop={10}>
-        <ChartComponent />
+        <ChartComponent
+          data={[
+            100, 92, 84, 76, 68, 60, 52, 44, 36, 28, 20, 12, 100, 92, 84, 76,
+            68, 60,
+          ]}
+          alert={150}
+        />
       </Box>
     </Box>
   )

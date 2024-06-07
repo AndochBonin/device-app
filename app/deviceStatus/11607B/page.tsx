@@ -34,19 +34,19 @@ export default function Device11607B() {
             width="200px"
             style={{ transform: "rotate(270deg) translateY(-60px)" }}
             colorScheme="green"
-            value={60}
+            value={70}
           />
           <Heading size={"xl"} marginLeft={24}>
-            60%
+            70%
           </Heading>
         </Box>
         <Box marginTop={4} marginRight={4} position="absolute" left={40}>
           <Text>Will alert at: 20%</Text>
-          <Text style={{ whiteSpace: "nowrap" }}>Last refill: 02/03/2022</Text>
+          <Text style={{ whiteSpace: "nowrap" }}>Last refill: 27/02/2022</Text>
         </Box>
       </Flex>
       <Center marginTop={20}>
-        <Text>As at: 11:24 am 03/03/2022</Text>
+        <Text>As at: 9:37 am 03/03/2022</Text>
       </Center>
       <Box position={"absolute"} bottom={8} right={4}>
         <Link href="/deviceHistory/11607B">

@@ -2,7 +2,7 @@
 import React, { Component, useState } from "react"
 import Chart from "react-apexcharts"
 
-export default function ChartComponent() {
+export default function ChartComponent({data, alert} : any) {
   const [state, setState] = useState({
     options: {
       chart: {
@@ -14,7 +14,7 @@ export default function ChartComponent() {
       annotations: {
         xaxis: [
           {
-            x: 150,
+            x: alert,
             borderColor: "#775DD0",
             label: {
               style: {
@@ -44,10 +44,7 @@ export default function ChartComponent() {
     series: [
       {
         name: "series-1",
-        data: [
-          100, 92, 84, 76, 68, 60, 52, 44, 36, 28, 20, 12, 100, 92, 84, 76, 68,
-          60,
-        ],
+        data: data
       },
     ],
   })

@@ -20,9 +20,6 @@ export default function StatusLayout({
 }: {
   children: React.ReactNode
 }) {
-  const [value, setValue] = useState(15)
-  const format = (val: any) => val + `%`
-  const parse = (val: any) => val.replace(/^\$/, "")
 
   return (
     <Box height={"100vh"}>
@@ -36,24 +33,6 @@ export default function StatusLayout({
 
         {children}
 
-        <Flex>
-          <Text>Send Depletion Alert When Level Reaches: </Text>
-          <NumberInput
-            size="lg"
-            maxW={32}
-            value={format(value)}
-            onChange={(valueString) => setValue(parse(valueString))}
-            defaultValue={15}
-            min={0}
-            max={100}
-          >
-            <NumberInputField />
-            <NumberInputStepper>
-              <NumberIncrementStepper />
-              <NumberDecrementStepper />
-            </NumberInputStepper>
-          </NumberInput>
-        </Flex>
         <Box position={"absolute"} bottom={8}>
           <Link href="/deviceList">
             <Button backgroundColor={"blue"} color="white">

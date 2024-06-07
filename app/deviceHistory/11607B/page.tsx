@@ -32,7 +32,11 @@ export default function Device11607B() {
         </Flex>
       </Box>
       <Box marginTop={10}>
-        <ChartComponent />
+        <ChartComponent
+          data={[
+            100, 95, 90, 80
+          ]}
+        />
       </Box>
     </Box>
   )

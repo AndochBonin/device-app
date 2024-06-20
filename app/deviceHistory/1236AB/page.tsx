@@ -2,6 +2,11 @@
 import ChartComponent from "@/app/components/chart"
 import { Box, Flex, Text, Select } from "@chakra-ui/react"
 import React from "react"
+import dynamic from 'next/dynamic'
+ 
+const DynamicChart = dynamic(() => import('../../components/chart'), {
+  ssr: false,
+})
 
 export default function Device1236AB() {
   return (
@@ -32,7 +37,7 @@ export default function Device1236AB() {
         </Flex>
       </Box>
       <Box marginTop={10}>
-        <ChartComponent
+        <DynamicChart
           data={[
             100, 92, 84, 76, 68, 60, 52, 44, 36, 28, 20, 12, 100, 92, 84, 76,
             68, 60,

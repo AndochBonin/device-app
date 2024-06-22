@@ -28,7 +28,7 @@ export default function TwoFactorAuth() {
   return (
     <Box height={"100vh"}>
       <Center backgroundColor={"blue"} paddingBottom={4}>
-        <Heading size={"4xl"} marginTop={4} color={"white"}>Adowa</Heading>
+        <Heading size={"4xl"} marginTop={4} color={"white"}>Adwa</Heading>
       </Center>
 
       <Center marginTop={20} marginX={4}>
